@@ -1,0 +1,264 @@
+/* playfair-display-sc-regular - latin */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/playfair-display-sc-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-sc-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* playfair-display-sc-700 - latin */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/playfair-display-sc-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-sc-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* playfair-display-sc-900 - l{atin */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/playfair-display-sc-v14-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-sc-v14-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*---ROOT Y GENERALES---*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: black;
+}
+
+/*----HEADER---*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(209, 193, 169);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: header;
+}
+
+.header div{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header div img{
+  width: 120px;
+  height: 120px;
+}
+.header nav .nav-menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content: space-between;
+}
+.header nav .nav-menu li{
+  margin-right:62px;
+  font-size: 18px;
+
+}
+.header nav .nav-menu li a{
+  text-decoration: none;
+  color: #040430;
+  font-size: 28px;
+}
+
+/*----INICIO----*/
+
+.promo-container{
+height: 100vh;
+background-image: url(../imagenes/losamigos.jpg);
+background-size: cover;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.promo-container div{
+  margin-top: 80px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-container div p{
+  margin-top: 20px;
+}
+
+.promo-container div a{
+  margin-top: 30px;
+  padding: 16px 38px; 
+  text-transform: uppercase;
+  color: #0c0c0a;
+  background-color: #f8c078;
+  border-radius: 30px;
+  border: black solid;
+}
+
+.amigos{
+  background-color: #f1f0f0;
+  box-shadow:0px 2px 20px #1d1a1a;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+.amigos .amigos-container{
+  margin-right: 15px;
+  margin-left: 45px;
+}
+
+
+/*----MENU----*/
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid: template rows 0.2fr 1fr 0.3fr ;
+  gap: 2px;
+  grid-template-areas: 
+  "header header header"
+  "main    main   main"
+  "footer footer footer";
+}
+
+.main{
+  background-image: url(../imagenes/menu.jpg);
+  background-size: cover;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  margin-top: 120px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .menu-section{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.main .menu-section div{
+  padding-bottom: 30px;
+  padding-left: 60px;
+}
+
+.main .menu-section-dos{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+
+/*---CONTACTO----*/
+
+.main-contact{
+background-image: url(https://pixabay.com/get/g6305454d74bbd25d01efd0efdd266feb201698e75d12672a198c7610e3efff6d4f54a22f2b5380679d7d3ec8eb46444e28a881f4a853e5ff7692e590450153b7e199b58c41df12b8d47d3696f75cc7a6_1920.jpg);
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding-bottom: 80px;
+margin-top: 120px;
+}
+
+.main-contact .main-contact-container{
+  margin-top: 210px;
+}
+
+
+.main-contact .main-contact-container div{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  margin-right: 400px ;
+}
+
+.main-contact div p{
+  line-height: 32px;
+}
+
+/*----UBICATION----*/
+
+.ubication{
+  background-color: antiquewhite;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*----FOTOS----*/
+
+.foto{
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.foto .foto-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px 10px;
+  grid-template-areas: 
+  "burger tropic sand"
+  "alas salpic rejos"
+  "calamares pincho boqueron"; 
+}
+
+/*-grid names-*/
+.burger { grid-area: burger; }
+.tropic { grid-area: tropic; }
+.sand { grid-area: sand; }
+.alas { grid-area: alas; }
+.rejos { grid-area: rejos; }
+.salpic { grid-area: salpic; }
+.calamares { grid-area: calamares; }
+.boqueron { grid-area: boqueron; }
+.pincho { grid-area: pincho; }
+
+
+
+/*-----FOOTER----*/
+
+.footer{
+  background-color: #47453142;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  grid-area: footer;
+}
+.footer ul {
+  list-style: none;
+  line-height: 18px;
+  font-size: 14px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: #0c0c0a;
+  font-weight: 700;
+}
