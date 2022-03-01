@@ -166,35 +166,11 @@ align-items: center;
   justify-content: space-evenly;
   align-items: center;
 }
-.main-menu .menu-section .raciones{
-  animation-name: card;
-  
-  }
-  .main-menu .menu-section .raciones:hover{
-  transform: scale(1.25) translateX(200px);
-  background-color: #f8c078;
-}
-.main-menu .menu-section .platos:hover{
-  transform: scale(1.25);
-}
-  
+
 .main-menu .menu-section-dos{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-.main-menu .menu-section-dos .ensaladas:hover{
-  transform: scale(1.25) translateX(200px);
-  background-color: #f8c078; 
-}
-.main-menu .menu-section-dos .bocadillos:hover{
-  transform: scale(1.25) translateX(200px);
-  background-color: #f8c078; 
-}
-.main-menu .menu-section-dos .burgers:hover{
-  transform: scale(1.25) translateX(200px);
-  background-color: #f8c078; 
-}
 }
 
 
@@ -246,6 +222,7 @@ padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 120px;
 }
 .foto .foto-grid-container{
   display: grid;
@@ -313,7 +290,9 @@ padding-bottom: 80px;
   }
   /*-----FOTOS---*/
   .foto .foto-grid-container{
-    grid-template-columns:(1fr, 1fr);
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(5, 1fr);
     grid-template-areas:
     "burger tropic"
     "sand     alas"
