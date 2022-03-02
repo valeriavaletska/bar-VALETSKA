@@ -185,7 +185,7 @@ align-items: center;
 /*---CONTACTO----*/
 
 .main-contact{
-background-image: url(https://pixabay.com/get/g6305454d74bbd25d01efd0efdd266feb201698e75d12672a198c7610e3efff6d4f54a22f2b5380679d7d3ec8eb46444e28a881f4a853e5ff7692e590450153b7e199b58c41df12b8d47d3696f75cc7a6_1920.jpg);
+background-color: #f8c078;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
@@ -193,16 +193,16 @@ padding-bottom: 80px;
 margin-top: 120px;
 }
 
-.main-contact .main-contact-container{
+/*.main-contact .main-contact-container{
   margin-top: 210px;
-}
+}*/
 
 
 .main-contact .main-contact-container div{
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
-  margin-right: 400px ;
+  padding-bottom: 20px;
+  justify-content: space-around;
 }
 
 .main-contact div p{
@@ -228,7 +228,7 @@ margin-top: 120px;
   align-items: center;
   margin-top: 120px;
 }
-.foto .foto-grid-container{
+/*.foto .foto-grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -239,7 +239,7 @@ margin-top: 120px;
   "calamares pincho boqueron"; 
 }
 
-/*-grid names-*/
+/*-grid names-*//*
 .burger { grid-area: burger; }
 .tropic { grid-area: tropic; }
 .sand { grid-area: sand; }
@@ -248,7 +248,7 @@ margin-top: 120px;
 .salpic { grid-area: salpic; }
 .calamares { grid-area: calamares; }
 .boqueron { grid-area: boqueron; }
-.pincho { grid-area: pincho; }
+.pincho { grid-area: pincho; }*/
 
 
 
